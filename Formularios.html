@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Formulario</title>
+</head>
+<body>
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get("nombre");
+    const apellidos = params.get("Apellidos");
+    const email = params.get("Email");
+    const direccion = params.get("Dirección");
+    const url = params.get("Url");
+    
+    document.write("Nombre: " + nombre + "<br>");
+    document.write("Apellidos: " + apellidos + "<br>");
+    document.write("Correo: " + email + "<br>");
+    document.write("Dirección: " + direccion + "<br>");
+    document.write("URL: " + url + "<br>");
+    </script>
+</body>
+</html>
